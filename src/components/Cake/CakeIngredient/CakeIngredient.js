@@ -13,6 +13,9 @@ class CakeIngredient extends Component {
         case ('layer-middle'):
             ingredient = <div className={styles.LayerMiddle}></div>
             break;
+        case ('plate'):
+            ingredient = <div className={styles.Plate}></div>
+            break;
         case ('layer-top'):
             ingredient = (
                 <div className={styles.LayerTop}>
@@ -22,7 +25,7 @@ class CakeIngredient extends Component {
             );
             break;
         case ('strawberry-cream'):
-            ingredient = <div classname={styles.StrawberryCream}></div>
+            ingredient = <div className={styles.StrawberryCream}></div>
             break;
         case('orange-cream'):
             ingredient = <div className={styles.OrangeCream}></div>

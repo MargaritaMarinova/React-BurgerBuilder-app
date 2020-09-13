@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import Aux from '../../hoc/Auxfile'
+import Aux from '../../hoc/Auxfile';
+import Cake from '../../components/Cake/Cake';
 
 class CakeBuilder extends Component {
     render() {
         return (
             <Aux>
-                <div>Cake</div>
+                <Cake />
                 <div>Build Controls</div>
             </Aux>
         );
