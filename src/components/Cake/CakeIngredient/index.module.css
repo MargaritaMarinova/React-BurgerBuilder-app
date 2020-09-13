@@ -1,18 +1,32 @@
 .LayerBottom {
     height: 13%;
     width: 80%;
-    background: linear-gradient(#F08E4A, #e27b36);
-    border-radius: 0 0 30px 30px;
-    box-shadow: inset -15px 0 #c15711;
+    background: linear-gradient(#E6C197, #f0a93f);
+    border-radius: 10px;
+    margin: 2% auto;
+}
+
+.Plate {
+    height: 13%;
+    width: 100%;
+    background: linear-gradient(#cac9eb, #cbcff5);
+    border-radius: 0 0 100% 100%;
+    margin: 2% auto;
+}
+
+.LayerMiddle {
+    height: 13%;
+    width: 80%;
+    background: linear-gradient(#f0d74a, #fcf949);
+    border-radius: 10px;
     margin: 2% auto;
 }
 
 .LayerTop {
-    height: 20%;
+    height: 15%;
     width: 80%;
-    background: linear-gradient(#bc581e, #e27b36);
-    border-radius: 50% 50% 0 0;
-    box-shadow: inset -15px 0 #c15711;
+    background: linear-gradient(#c5733d, #f0a93f);
+    border-radius: 30% 30% 0 0;
     margin: 2% auto;
     position: relative;
 }
@@ -82,12 +96,15 @@
   
 
 .StrawberryCream {
-    width: 80%;
-    height: 8%;
-    background: linear-gradient(#7f3608, #702e05);
-    margin: 2% auto;
-    border-radius: 15px;
+  background: repeating-radial-gradient(#e66465, #9198e5 20%);   
+  background-size: 50px 60px;
+  border-radius: 10px;
+  content: " ";
+  width: 85%;
+  height: 25px;
+  margin: auto;
 }
+
 
 .OrangeCream {
     width: 90%;
@@ -107,7 +124,8 @@
 
 .ChockoCream {
     width: 80%;
-    height: 3%;
-    background: linear-gradient(#bf3813, #c45e38);
+    height: 6%;
+    background: linear-gradient(brown, #c45e38);
+    border-radius: 10px;
     margin: 2% auto;
 }

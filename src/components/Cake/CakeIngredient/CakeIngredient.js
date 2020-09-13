@@ -1,12 +1,20 @@
-import React from 'react';
-import styles from './index.module.css'
+import React, {Component} from 'react';
+import styles from './index.module.css';
+import PropTypes from 'prop-types';
 
-const cakeIngredient = (props) => {
-    let ingredient = null;
+class CakeIngredient extends Component {
+    render() {
+        let ingredient = null;
 
-    switch (props.type) {
+    switch (this.props.type) {
         case ('layer-bottom'):
             ingredient = <div className={styles.LayerBottom}></div>
+            break;
+        case ('layer-middle'):
+            ingredient = <div className={styles.LayerMiddle}></div>
+            break;
+        case ('plate'):
+            ingredient = <div className={styles.Plate}></div>
             break;
         case ('layer-top'):
             ingredient = (
@@ -17,7 +25,7 @@ const cakeIngredient = (props) => {
             );
             break;
         case ('strawberry-cream'):
-            ingredient = <div classname={styles.StrawberryCream}></div>
+            ingredient = <div className={styles.StrawberryCream}></div>
             break;
         case('orange-cream'):
             ingredient = <div className={styles.OrangeCream}></div>
@@ -32,8 +40,12 @@ const cakeIngredient = (props) => {
             ingredient = null;
     }
     return ingredient;
-
-
+    };
 };
 
-export default cakeIngredient;
+CakeIngredient.propTypes = {
+    type: PropTypes.string.isRequired
+
+}
+
+export default CakeIngredient;
